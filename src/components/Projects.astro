@@ -10,50 +10,95 @@ interface Props {
 const { projects } = Astro.props;
 ---
 
-<Section text="Featured Projects" href="projects">
-  {
-    projects.map(({ name, summary, image, linkPreview, linkSource }, index) => {
-      const top = 98 + index * 40;
-      return (
-        <div
-          style={`top: ${top}px;`}
-          class="sticky mb-12 rounded-2xl border border-neutral/20 bg-black"
-        >
-          <div class="bg-difu relative z-1 grid h-145 w-full grid-rows-2 rounded-2xl bg-[#1c232d]/85 before:absolute before:inset-0 before:z-[-1] before:rounded-2xl before:bg-[url(/raja.png)] before:bg-size-[128px] before:bg-repeat before:opacity-5 before:content-[''] sm:grid-cols-2 sm:grid-rows-1 md:h-96">
-            <div class="px-6 pt-12">
-              <h3 class="mb-5 font-serif text-3xl font-medium text-primary">
-                {name}
-              </h3>
-              <p class="text-base text-neutral">{summary}</p>
-              <div class="flex gap-5 pt-10 text-white">
-                <a
-                  href={linkSource}
-                  target="_blank"
-                  class="after:relative after:-bottom-1.25 after:content-[url(/external.svg)] hover:underline"
-                >
-                  Source
-                </a>
-                <a
-                  href={linkPreview}
-                  target="_blank"
-                  class="after:relative after:-bottom-1.25 after:content-[url(/external.svg)] hover:underline"
-                >
-                  Preview
-                </a>
+<Section text="Proyectos destacados" href="projects">
+  <div class="space-y-16">
+    {
+      projects.map(
+        ({ name, summary, image, technologies, linkPreview, linkSource }, index) => (
+          <article
+            class:list={[
+              "overflow-hidden rounded-2xl border border-neutral/20 bg-[#1c232d]/60",
+              index === 0 && "border-primary/30",
+            ]}
+          >
+            <div class="grid md:grid-cols-2">
+              <div class="flex flex-col p-7 md:p-10">
+                {
+                  index === 0 && (
+                    <span class="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
+                      Proyecto principal
+                    </span>
+                  )
+                }
+
+                <h3 class="mb-5 font-serif text-3xl font-bold text-white md:text-4xl">
+                  {name}
+                </h3>
+
+                <p class="text-base leading-7 text-neutral">
+                  {summary}
+                </p>
+
+                <div class="mt-7">
+                  <p class="mb-3 text-sm font-medium text-white">
+                    Tecnologías utilizadas
+                  </p>
+
+                  <div class="flex flex-wrap gap-2">
+                    {
+                      technologies.map((technology) => (
+                        <span class="rounded-full border border-primary/30 bg-primary/10 px-3 py-1.5 text-xs font-medium text-primary">
+                          {technology}
+                        </span>
+                      ))
+                    }
+                  </div>
+                </div>
+
+                <div class="mt-8 flex flex-wrap gap-6">
+                  {
+                    linkSource && (
+                      <a
+                        href={linkSource}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="font-medium text-white hover:text-primary hover:underline"
+                      >
+                        GitHub ↗
+                      </a>
+                    )
+                  }
+
+                  {
+                    linkPreview && (
+                      <a
+                        href={linkPreview}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="font-medium text-white hover:text-primary hover:underline"
+                      >
+                        Ver proyecto ↗
+                      </a>
+                    )
+                  }
+                </div>
+              </div>
+
+              <div class="relative min-h-72 overflow-hidden bg-black md:min-h-full">
+                <Image
+                  class="h-full w-full object-cover object-top transition duration-500 hover:scale-105"
+                  src={image}
+                  alt={`Captura del proyecto ${name}`}
+                  width="736"
+                  height="483"
+                />
+
+                <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
               </div>
             </div>
-            <div class="flex items-end justify-end overflow-hidden">
-              <Image
-                class="h-full w-[95%] rounded-ss-xl rounded-ee-2xl object-none object-top-left sm:h-[85%] sm:w-full"
-                src={image}
-                alt={name}
-                width="736"
-                height="483"
-              />
-            </div>
-          </div>
-        </div>
-      );
-    })
-  }
+          </article>
+        ),
+      )
+    }
+  </div>
 </Section>

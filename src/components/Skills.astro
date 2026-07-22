@@ -1,0 +1,54 @@
+---
+import Section from "./Section.astro";
+
+const mainSkills = ["Java", "Spring Boot", "Angular", "MySQL"];
+
+const otherSkills = [
+  "TypeScript",
+  "JavaScript",
+  "SQL",
+  "Git",
+  "GitHub",
+  "REST APIs",
+];
+---
+
+<Section text="Tecnologías" href="skills">
+  <div class="space-y-10">
+    <div>
+      <h3 class="mb-4 font-serif text-2xl font-bold text-white">
+        Stack principal
+      </h3>
+
+      <div class="flex flex-wrap gap-3">
+        {
+          mainSkills.map((skill) => (
+            <span
+              class="rounded-full border border-primary/50 bg-primary/10 px-5 py-2.5 text-sm font-medium text-primary transition hover:bg-primary/20"
+            >
+              {skill}
+            </span>
+          ))
+        }
+      </div>
+    </div>
+
+    <div>
+      <h3 class="mb-4 font-serif text-2xl font-bold text-white">
+        Otras tecnologías
+      </h3>
+
+      <div class="flex flex-wrap gap-3">
+        {
+          otherSkills.map((skill) => (
+            <span
+              class="rounded-full border border-neutral/20 bg-[#1c232d]/60 px-5 py-2.5 text-sm font-medium text-white transition hover:border-primary hover:text-primary"
+            >
+              {skill}
+            </span>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</Section>

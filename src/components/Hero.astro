@@ -11,17 +11,32 @@ const { name, specialty, summary, email } = Astro.props;
   >
     {name}
   </h1>
+
   <p
     class="mb-9 font-serif text-4xl leading-11.5 font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl"
   >
     {specialty}
   </p>
+
   <p class="mb-16 text-base font-normal text-neutral md:text-lg">
     {summary}
   </p>
 
-  <a
-    class="inline-block rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-[#fff]"
-    href={`mailto:${email}`}>Get in Touch</a
-  >
+  <div class="flex flex-wrap gap-4">
+    <a
+      class="inline-block rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-[#fff]"
+      href={`mailto:${email}`}
+    >
+      Contacto
+    </a>
+
+    <a
+      class="inline-block rounded-full border border-primary px-8 py-5 text-sm leading-5 font-medium text-primary transition hover:bg-primary hover:text-white"
+      href="/CV_Agustin_Vergara.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Ver CV
+    </a>
+  </div>
 </section>
