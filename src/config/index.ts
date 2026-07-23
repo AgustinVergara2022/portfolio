@@ -50,17 +50,18 @@ company:
 "Universidad Tecnológica Nacional — Facultad Regional Concepción del Uruguay",
 position: "Becario — Laboratorio de Informática Básica",
 startDate: "Abril 2024",
-endDate: "Actualidad",
+endDate: "Diciembre 2025",
 summary: [
 "Asistencia y soporte a estudiantes y docentes en el uso de herramientas y recursos informáticos.",
 "Resolución de problemas técnicos y colaboración en tareas relacionadas con el funcionamiento del laboratorio.",
+"Asimismo, desarrollé proyectos personales y académicos aplicando conceptos de desarrollo Full Stack, APIs REST, bases de datos y seguridad web.",
 ],
 },
 ],
 
 projects: [
   {
-    name: "Películas Full Stack",
+    name: "MovieTracker",
     summary:
       "Aplicación web full-stack para la gestión y consulta de un catálogo de películas. El proyecto cuenta con un frontend desarrollado en Angular y un backend desarrollado con Java y Spring Boot, conectado a una base de datos MySQL.",
     technologies: ["Java", "Spring Boot", "Angular", "MySQL"],

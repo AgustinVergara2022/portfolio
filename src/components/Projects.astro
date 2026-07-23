@@ -21,8 +21,10 @@ const { projects } = Astro.props;
               index === 0 && "border-primary/30",
             ]}
           >
-            <div class="grid md:grid-cols-2">
-              <div class="flex flex-col p-7 md:p-10">
+            <div class="grid md:grid-cols-[0.8fr_1.2fr]">
+
+              <!-- Información del proyecto -->
+              <div class="flex flex-col justify-center p-7 md:p-9">
                 {
                   index === 0 && (
                     <span class="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
@@ -62,7 +64,7 @@ const { projects } = Astro.props;
                         href={linkSource}
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="font-medium text-white hover:text-primary hover:underline"
+                        class="font-medium text-white transition hover:text-primary hover:underline"
                       >
                         GitHub ↗
                       </a>
@@ -75,7 +77,7 @@ const { projects } = Astro.props;
                         href={linkPreview}
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="font-medium text-white hover:text-primary hover:underline"
+                        class="font-medium text-white transition hover:text-primary hover:underline"
                       >
                         Ver proyecto ↗
                       </a>
@@ -84,17 +86,21 @@ const { projects } = Astro.props;
                 </div>
               </div>
 
-              <div class="relative min-h-72 overflow-hidden bg-black md:min-h-full">
-                <Image
-                  class="h-full w-full object-cover object-top transition duration-500 hover:scale-105"
-                  src={image}
-                  alt={`Captura del proyecto ${name}`}
-                  width="736"
-                  height="483"
-                />
+              <!-- Vista previa del proyecto -->
+              <div class="relative flex min-h-[420px] items-center justify-center overflow-hidden bg-black p-4 md:min-h-[480px] md:p-5">
+                <div class="relative h-full w-full overflow-hidden rounded-xl border border-white/10 bg-[#11161d] shadow-2xl">
+                  <Image
+                    class="h-full w-full object-cover object-[center_35%] transition duration-500 hover:scale-[1.02]"
+                    src={image}
+                    alt={`Captura del proyecto ${name}`}
+                    width="1200"
+                    height="800"
+                  />
 
-                <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+                </div>
               </div>
+
             </div>
           </article>
         ),
