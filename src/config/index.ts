@@ -12,8 +12,8 @@ export const SITE_CONFIG: SiteConfig = {
   navLinks: [
     { text: "Experiencia", href: "#experience" },
     { text: "Proyectos", href: "#projects" },
-    { text: "Tecnologías", href: "#skills" },
     { text: "Sobre mí", href: "#about" },
+    { text: "Tecnologías", href: "#skills" },
   ],
 
   socialLinks: [
