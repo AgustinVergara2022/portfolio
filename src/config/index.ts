@@ -38,9 +38,9 @@ export const SITE_CONFIG: SiteConfig = {
 export const SITE_CONTENT: SiteContent = {
 hero: {
 name: "Agustín Vergara",
-specialty: "Java & Full Stack Developer",
+specialty: "Java & DevOps Junior en formación",
 summary:
-"Estudiante avanzado de Ingeniería de Sistemas de Información, enfocado en el desarrollo de aplicaciones web con Java, Spring Boot, Angular y MySQL.",
+"Estudiante avanzado de Ingeniería de Sistemas de Información, con experiencia en desarrollo web, despliegue de aplicaciones y tecnologías como Java, Spring Boot, Docker, Angular y MySQL.",
 email: "[agustinvergara215@gmail.com](mailto:agustinvergara215@gmail.com)",
 },
 
@@ -52,9 +52,10 @@ position: "Becario — Laboratorio de Informática Básica",
 startDate: "Abril 2024",
 endDate: "Diciembre 2025",
 summary: [
-"Asistencia y soporte a estudiantes y docentes en el uso de herramientas y recursos informáticos.",
-"Resolución de problemas técnicos y colaboración en tareas relacionadas con el funcionamiento del laboratorio.",
-"Asimismo, desarrollé proyectos personales y académicos aplicando conceptos de desarrollo Full Stack, APIs REST, bases de datos y seguridad web.",
+  "Asistencia y soporte a estudiantes y docentes en el uso de herramientas y recursos informáticos.",
+  "Resolución de problemas técnicos y colaboración en tareas relacionadas con el funcionamiento del laboratorio.",
+  "Desarrollo de proyectos académicos y personales aplicando Java, Spring Boot, Angular, APIs REST y bases de datos relacionales.",
+  "Experiencia práctica con Git, GitHub, Docker y despliegue de aplicaciones web en plataformas cloud.",
 ],
 },
 ],
@@ -63,11 +64,11 @@ projects: [
   {
     name: "MovieTracker",
     summary:
-      "Aplicación web full-stack para la gestión y consulta de un catálogo de películas. El proyecto cuenta con un frontend desarrollado en Angular y un backend desarrollado con Java y Spring Boot, conectado a una base de datos MySQL.",
+      "Aplicación web full-stack para la gestión y consulta de un catálogo de películas. Cuenta con un frontend desarrollado en Angular y un backend desarrollado con Java y Spring Boot, conectado a MySQL. El backend está contenerizado con Docker mediante un Dockerfile multi-stage y desplegado en la nube.",
     technologies: ["Java", "Spring Boot", "Angular", "MySQL"],
     linkPreview: "https://peliculas-fullstack.vercel.app/",
     linkSource:
-      "https://github.com/AgustinVergara2022/peliculas-fullstack",
+      "https://github.com/AgustinVergara2022/MovieTracker",
     image: "/MovieTracker.png",
   },
   {
@@ -89,11 +90,11 @@ projects: [
 
 about: {
 description: `
-Soy Agustín Vergara, estudiante avanzado de Ingeniería de Sistemas de Información en la Universidad Tecnológica Nacional. Me interesa el desarrollo de software y la creación de aplicaciones web, especialmente utilizando Java, Spring Boot, Angular y MySQL.
+Soy Agustín Vergara, estudiante avanzado de Ingeniería de Sistemas de Información en la Universidad Tecnológica Nacional. Me interesa el desarrollo de software, el despliegue de aplicaciones y la automatización de procesos, con especial interés en el ecosistema Java y las tecnologías DevOps.
 
-A lo largo de mi formación académica desarrollé diferentes proyectos full-stack que me permitieron trabajar con APIs REST, bases de datos relacionales, operaciones CRUD y arquitecturas frontend-backend.
+A lo largo de mi formación desarrollé diferentes proyectos full-stack que me permitieron trabajar con Java, Spring Boot, Angular, APIs REST y bases de datos relacionales. También adquirí experiencia práctica utilizando Git, GitHub, Docker y plataformas de despliegue como Render, Vercel y Aiven.
 
-Actualmente continúo fortaleciendo mis conocimientos en desarrollo de software y buscando oportunidades que me permitan incorporarme al mundo profesional, seguir aprendiendo y aportar mis conocimientos a nuevos proyectos.
+Actualmente estoy profundizando mis conocimientos en Docker, contenedores y prácticas DevOps, con el objetivo de seguir desarrollándome profesionalmente en el área de desarrollo y operaciones.
 `,
 image: "/agustin-big.png",
 },
