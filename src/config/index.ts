@@ -38,9 +38,9 @@ export const SITE_CONFIG: SiteConfig = {
 export const SITE_CONTENT: SiteContent = {
 hero: {
 name: "Agustín Vergara",
-specialty: "Java & DevOps Junior en formación",
+specialty: "Developer Full Stack",
 summary:
-"Estudiante avanzado de Ingeniería de Sistemas de Información, con experiencia en desarrollo web, despliegue de aplicaciones y tecnologías como Java, Spring Boot, Docker, Angular y MySQL.",
+"Estudiante avanzado de Ingeniería de Sistemas de Información, con experiencia práctica en desarrollo web, despliegue de aplicaciones y tecnologías como Java, Spring Boot, Docker, Angular y MySQL.",
 email: "[agustinvergara215@gmail.com](mailto:agustinvergara215@gmail.com)",
 },
 
