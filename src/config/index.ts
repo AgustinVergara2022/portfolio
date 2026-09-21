@@ -90,9 +90,9 @@ projects: [
 
 about: {
 description: `
-Soy Agustín Vergara, estudiante avanzado de Ingeniería de Sistemas de Información en la Universidad Tecnológica Nacional. Me interesa el desarrollo de software, el despliegue de aplicaciones y la automatización de procesos, con especial interés en el ecosistema Java y las tecnologías DevOps.
+Soy Agustín Vergara, estudiante avanzado de Ingeniería de Sistemas de Información en la Universidad Tecnológica Nacional. Me interesa el desarrollo de software y construcción de soluciones tecnológicas eficientes y escalables.
 
-A lo largo de mi formación desarrollé diferentes proyectos full-stack que me permitieron trabajar con Java, Spring Boot, Angular, APIs REST y bases de datos relacionales. También adquirí experiencia práctica utilizando Git, GitHub, Docker y plataformas de despliegue como Render, Vercel y Aiven.
+A lo largo de mi formación desarrollé diferentes proyectos que me permitieron trabajar con Java, Spring Boot, Angular, APIs REST y bases de datos relacionales. También adquirí experiencia práctica utilizando Git, GitHub, Docker y plataformas de despliegue como Render, Vercel y Aiven.
 
 Actualmente estoy profundizando mis conocimientos en Docker, contenedores y prácticas DevOps, con el objetivo de seguir desarrollándome profesionalmente en el área de desarrollo y operaciones.
 `,
